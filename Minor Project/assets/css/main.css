@@ -316,18 +316,17 @@ a{
     
 }
 .section-item:hover{
+    
     border-color: var(--clr-blue-dark);
     transform: scale(1.02);
     transition: .5s ease;
     border: .1rem solid #0ef;
     box-shadow: 10px 15px 1rem var(--clr-grey);
     border-color: var(--clr-grey);
-
-    /*  background-color: var(--clr-blue) ;
-    
-    color: var(--clr-white);
-   
-    transition: .5s ease;*/
+    border-style: inset var(--clr-blue-mid);
+    border-radius: 6rem 6rem;
+    background: rgb(109, 229, 237);
+    cursor: context-menu;
 }
 
 /* footer */
