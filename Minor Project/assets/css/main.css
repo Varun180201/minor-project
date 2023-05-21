@@ -651,7 +651,10 @@ textarea{
     background: #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     overflow:hidden;
-    
+}
+.m-box:hover {
+    border: 1px solid rgba(50, 50, 50,0.3);
+    box-shadow: 5px 10px 8px rgba(20, 20, 20, 0.2);
 }
 
 .m-img {
