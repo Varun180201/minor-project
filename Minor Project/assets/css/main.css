@@ -623,3 +623,87 @@ textarea{
         overflow: hidden;
     }
 }
+
+
+
+
+/*====MUDIT SECTION START===================== */
+
+.m-wrapper {
+    margin: 10px auto;
+    padding: 0 10%;
+    padding-bottom: 50px;
+}
+
+.m-wrapper h1 {
+    text-align: center;
+    padding-bottom: 40px;
+    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.m-container {
+    display: grid;
+    gap: 90px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.m-box {
+    height: 200px;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    overflow:hidden;
+}
+.m-box:hover {
+    border: 1px solid rgba(50, 50, 50,0.3);
+    box-shadow: 5px 10px 8px rgba(20, 20, 20, 0.2);
+}
+
+.m-img {
+    height: 70px;
+    width: 70px;
+}
+
+.m-h3 {
+    font-size: 20px;
+}
+.m-p {
+    font-size: 15px;
+    font-weight:normal;
+}
+
+/*====MUDIT SECTION END====================== */
+
+
+/* YE mere ilaka hai biddu*/
+.sanjay{
+    background-color  : #212121;
+}
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  }
+
+  .cards:hover > .card:not(:hover){
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+  .submit:hover {
+    box-shadow: 0px 0px 5px 1px rgba(0, 255, 117, 0.30);
+   }
+/* Visit Again*/
