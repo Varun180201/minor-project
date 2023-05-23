@@ -180,44 +180,100 @@ a{
 }
 
 /* navbar part */
-.navbar{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
-}
-
-.navbar .container{
+.nav {
+    height: 50px;
     width: 100%;
-}
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #black;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: var(--clr-blue);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: var(--clr-blue);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
 
-.navbar-brand{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1.8rem;
-}
-.navbar-brand-text{
-    color: var(--clr-dark);
-    font-weight: 600;
-}
-.navbar-brand-text span{
-    color: var(--clr-blue);
-}
-.navbar-brand-icon{
-    width: 25px;
-    margin-right: 6px;
-    opacity: 0.8;
-}
-.brand-and-toggler{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .header{
     min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -647,6 +703,10 @@ textarea{
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 
+table{
+    height: 100%;
+}
+
 .m-box {
     height: 200px;
     width: 350px;
@@ -664,7 +724,7 @@ textarea{
 
 .m-img {
     height: 70px;
-    width: 70px;
+    width: 150px;
 }
 
 .m-h3 {
