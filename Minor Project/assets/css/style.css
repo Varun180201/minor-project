@@ -212,7 +212,7 @@ a{
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #black;
+    color: black;
   }
   
   .nav > .nav-links > a:hover {
@@ -684,55 +684,23 @@ textarea{
 
 
 /*====MUDIT SECTION START===================== */
-
-.m-wrapper {
-    margin: 10px auto;
-    padding: 0 10%;
-    padding-bottom: 50px;
+.sanjay{
+    background-image: url(https://img.freepik.com/free-vector/stylish-background-with-damask-pattern_1048-1348.jpg?w=740&t=st=1685530443~exp=1685531043~hmac=28e340c962328505920c0a832db62e03ae77a607f8a9b7b9e6e1eba3656b6a62);
 }
-
-.m-wrapper h1 {
-    text-align: center;
-    padding-bottom: 40px;
-    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
-}
-
-.m-container {
-    display: grid;
-    gap: 90px;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-}
-
-table{
-    height: 100%;
-}
-
 .m-box {
-    height: 200px;
-    width: 350px;
+    height: 150px;
+    width: 400px;
     padding: 20px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 20px;
     background: #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     overflow:hidden;
 }
 .m-box:hover {
-    border: 1px solid rgba(50, 50, 50,0.3);
-    box-shadow: 5px 10px 8px rgba(20, 20, 20, 0.2);
-}
-
-.m-img {
-    height: 70px;
-    width: 150px;
-}
-
-.m-h3 {
-    font-size: 20px;
-}
-.m-p {
-    font-size: 15px;
-    font-weight:normal;
+   
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
 /*====MUDIT SECTION END====================== */
